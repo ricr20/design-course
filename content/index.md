@@ -3,9 +3,9 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Om mig
 ==========================
 
-The source for this page is in `content/index.md`.
+Hej! Jag heter Rickard! Jag bor i Halmstad tillsammans med min sambo Erika. På sommrarna tycker jag om att fiska och bada och på vintrarna åker jag skidor! Något som håller i sig året om är mitt intresse för teknik och spel!
 
-This is a sample home page written in markdown with some frontmatter defined.
+<img src="%base_url%/image/rickard.png" alt="Bild på Rickard Carlsson">
