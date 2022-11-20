@@ -34,6 +34,7 @@ body {
 .main img {
     width: 180px;
     margin-top: 50px;
+    border: 2px solid deepskyblue;
 }
 
 .header, .footer {
@@ -42,15 +43,28 @@ body {
 
 /* Header */
 
+.header {
+    padding-top: 3em;
+    font-family: monospace;
+}
+
 .header, .site-header {
     display: flex;
     justify-content: space-between;
 }
 
+.header a {
+    text-decoration: none;
+}
+
+.header .headerName {
+    color: deepskyblue;
+}
+
 /* Title */
 
 .title, .logo {
-    padding: 3em 2em 3em 0;
+    padding: 0 2em 3em 0;
 }
 
 .title * {
@@ -71,7 +85,8 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #222;
+    border-top: 2px solid deepskyblue;
+    padding: 10px 5px;
 }
 
 .footer a {
@@ -97,13 +112,43 @@ p, td, th, li, dd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.6em;
+    margin-bottom: 0.3em;
     font-weight: bold;
 }
 
 img {
     max-width: 100%;
 }
+
+/* Nav menu */
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav ul li {
+    padding: 0.8em 1em;
+}
+
+.nav ul li.active {
+    border: 1px solid deepskyblue;
+}
+
+.nav a, .nav-toggle {
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+}
+
 
 /* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
 
@@ -114,7 +159,7 @@ code {
     padding: 0.1em 0.2em;
     border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: #f5f5f5;
+    background: black;
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
